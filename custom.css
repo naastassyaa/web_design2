@@ -1,0 +1,18 @@
+
+.events{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    width: 300px;
+}
+
+.sort-text {
+    font-weight: bold;
+}
+
+.count-text {
+    font-weight: bold;
+}

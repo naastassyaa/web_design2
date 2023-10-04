@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My website</title>
+
+    <link rel="stylesheet" href="../lab_3/custom.css"/>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+            crossorigin="anonymous"
+    />
+    <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+            crossorigin="anonymous"
+    ></script>
+</head>
+
+<body class="bg-light">
+<div class="container p-3">
+    <div class="row mb-3">
+        <h1 class="text-center">My events</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h4 class="mb-3">Sort Events</h4>
+           <p class="sort-text">Sort by Date</p>
+            <button id="sort_button" type="button" class="btn btn-primary mt-4 sort-button">
+                Sort
+            </button>
+        </div>
+        <div class="col-md-4">
+            <h4 class="mb-3">Count total visitors</h4>
+            <p id="count_result" class="count-text">Total Visitors: 0</p>
+            <button id="count_button" type="button" class="btn btn-success mt-4">
+                Count
+            </button>
+
+        </div>
+        <div class="col-md-4">
+            <h4 class="mb-3">Find Cards</h4>
+            <input id="find_input" type="text" class="form-control"/>
+            <button id="find_button" type="button" class="btn btn-primary mt-4">
+                Find
+            </button>
+            <button id="cancel_find_button" type="button" class="btn btn-danger mt-4">
+                Cancel
+            </button>
+
+        </div>
+    </div>
+    <div id="cards">
+    <ul id="items_container" class="col-md-12 mt-5 mx-auto events">
+
+    </ul>
+    </div>
+</div>
+
+<script type="module" src="../lab_3/js/index.js"></script>
+</body>
+</html>
