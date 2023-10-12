@@ -21,7 +21,7 @@ function displayEventData(data) {
         eventsContainer.innerHTML = "";
         eventsContainer.insertAdjacentHTML("afterbegin", `<h1 style="margin-top: 50px; text-align: center">No Data<h1>`)
     }
-    console.log(data)
+
 
     data.forEach((event) => {
         eventsContainer.insertAdjacentHTML("beforeend", `<li class="card">
@@ -32,6 +32,7 @@ function displayEventData(data) {
                 <p class="card-text">Address: ${event.address}</p>
                 <p class="card-text">Date: ${event.date}</p>
                 <p class="card-text">Visitors: ${event.max_visitors}</p>
+                <a href="edit.html?eventId=${event.event_id}"><button class="btn btn-primary edit-button">Edit</button><a>
             </div>
         </li>`)
     });
@@ -104,3 +105,5 @@ cancelFindButton.addEventListener("click", () => {
 
 
 document.addEventListener("DOMContentLoaded", fetchAndDisplayEventData);
+
+

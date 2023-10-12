@@ -16,3 +16,7 @@
 .count-text {
     font-weight: bold;
 }
+
+.create_button {
+    margin-bottom: 15px;
+}
