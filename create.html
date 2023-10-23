@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Add Event</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+          integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+          crossorigin="anonymous"
+    />
+</head>
+<body class="bg-light">
+<div class="container p-3">
+    <div class="row mb-3">
+        <h1 class="text-center">Add Event</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <form id="eventForm">
+                <div class="mb-3">
+                    <label for="eventName" class="form-label">Event Name</label>
+                    <input type="text" class="form-control" id="eventName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="eventDescription" class="form-label">Event Description</label>
+                    <textarea class="form-control" id="eventDescription" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="eventCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="eventCity" required>
+                </div>
+                <div class="mb-3">
+                    <label for="eventAddress" class="form-label">Address</label>
+                    <input class="form-control" id="eventAddress" rows="3" required></input>
+                </div>
+                <div class="mb-3">
+                    <label for="eventDate" class="form-label">Date and Time</label>
+                    <input type="datetime-local" class="form-control" id="eventDate" required>
+                </div>
+                <div class="mb-3">
+                    <label for="eventMaxVisitors" class="form-label">Maximum Visitors</label>
+                    <input type="number" class="form-control" id="eventMaxVisitors" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Event</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="module" src="../lab4/js/create.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+</html>
